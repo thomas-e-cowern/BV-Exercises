@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41361EC623F982B60036D7E3 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41361EC523F982B60036D7E3 /* Header.xib */; };
 		413D86DB23F8ADAE00441982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D86DA23F8ADAE00441982 /* AppDelegate.swift */; };
 		413D86DD23F8ADAE00441982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D86DC23F8ADAE00441982 /* SceneDelegate.swift */; };
 		413D86DF23F8ADAE00441982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D86DE23F8ADAE00441982 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41361EC523F982B60036D7E3 /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
 		413D86D723F8ADAD00441982 /* TinderFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413D86DA23F8ADAE00441982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413D86DC23F8ADAE00441982 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				413D86DA23F8ADAE00441982 /* AppDelegate.swift */,
 				413D86DC23F8ADAE00441982 /* SceneDelegate.swift */,
 				413D86DE23F8ADAE00441982 /* ViewController.swift */,
+				41361EC523F982B60036D7E3 /* Header.xib */,
 				413D86E023F8ADAE00441982 /* Main.storyboard */,
 				413D86E323F8ADB400441982 /* Assets.xcassets */,
 				413D86E523F8ADB400441982 /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 				413D86E723F8ADB400441982 /* LaunchScreen.storyboard in Resources */,
 				413D86E423F8ADB400441982 /* Assets.xcassets in Resources */,
 				413D86E223F8ADAE00441982 /* Main.storyboard in Resources */,
+				41361EC623F982B60036D7E3 /* Header.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
