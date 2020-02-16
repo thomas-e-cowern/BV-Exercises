@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,15 +12,57 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TinderFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ri-yV-x97">
-                                <rect key="frame" x="102" y="183" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1hB-wU-Crt">
+                                <rect key="frame" x="1008.5" y="16" width="182" height="992"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person4" translatesAutoresizingMaskIntoConstraints="NO" id="Sq6-VP-lPU">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="330.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person5" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-6K-nzi">
+                                        <rect key="frame" x="0.0" y="330.5" width="182" height="331"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person6" translatesAutoresizingMaskIntoConstraints="NO" id="arQ-ax-jec">
+                                        <rect key="frame" x="0.0" y="661.5" width="182" height="330.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ri-yV-x97">
+                                <rect key="frame" x="20" y="16" width="954" height="654"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H9i-Lk-v4L">
+                                <rect key="frame" x="16" y="677.5" width="1600" height="330.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbH-b2-Afk">
+                                        <rect key="frame" x="0.0" y="0.0" width="800" height="330.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8n0-2F-csr">
+                                        <rect key="frame" x="800" y="0.0" width="800" height="330.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1hB-wU-Crt" firstAttribute="leading" secondItem="H9i-Lk-v4L" secondAttribute="trailing" constant="16" id="0M1-67-eHM"/>
+                            <constraint firstItem="H9i-Lk-v4L" firstAttribute="bottom" secondItem="arQ-ax-jec" secondAttribute="bottom" id="Bvo-xR-oA3"/>
+                            <constraint firstItem="7ri-yV-x97" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MJX-1Q-k3U"/>
+                            <constraint firstItem="8n0-2F-csr" firstAttribute="height" secondItem="arQ-ax-jec" secondAttribute="height" id="SlF-sF-jW3"/>
+                            <constraint firstItem="H9i-Lk-v4L" firstAttribute="top" secondItem="arQ-ax-jec" secondAttribute="top" id="T8o-Z1-AcQ"/>
+                            <constraint firstItem="arQ-ax-jec" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:1" id="TPh-rp-MoD"/>
+                            <constraint firstItem="H9i-Lk-v4L" firstAttribute="top" secondItem="7ri-yV-x97" secondAttribute="bottom" constant="345.5" id="WoT-vy-Tzm"/>
+                            <constraint firstItem="1hB-wU-Crt" firstAttribute="leading" secondItem="7ri-yV-x97" secondAttribute="trailing" constant="1616" id="ar2-rk-Wy4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H9i-Lk-v4L" secondAttribute="bottom" constant="16" id="cIa-Xd-ceP"/>
+                            <constraint firstItem="H9i-Lk-v4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dKc-dZ-uDh"/>
+                            <constraint firstItem="1hB-wU-Crt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/3" id="eBk-BB-UK8"/>
+                            <constraint firstItem="7ri-yV-x97" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="huQ-36-jD8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1hB-wU-Crt" secondAttribute="bottom" constant="16" id="jdC-na-DZ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1hB-wU-Crt" secondAttribute="trailing" constant="16" id="pwW-3s-PnW"/>
+                            <constraint firstItem="8n0-2F-csr" firstAttribute="width" secondItem="arQ-ax-jec" secondAttribute="width" multiplier="1.42899" id="ua9-jk-xTP"/>
+                            <constraint firstItem="1hB-wU-Crt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zYn-im-f8D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -29,7 +71,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="107"/>
+            <point key="canvasLocation" x="131.77159590043922" y="106.640625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Person4" width="163" height="117"/>
+        <image name="Person5" width="163" height="117"/>
+        <image name="Person6" width="182" height="121"/>
+    </resources>
 </document>
